@@ -307,6 +307,19 @@
             background: rgba(0, 0, 0, 0.05);
             border: 1px solid rgba(0, 0, 0, 0.1);
         }
+
+        /* Grid Lists */
+        .grid-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .section-title {
+            border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -323,44 +336,48 @@
             <div class="animate-float">
                 <h1 class="text-5xl md:text-7xl font-black mb-4 gradient-text">Artem Kozlov</h1>
                 <div class="typewriter text-2xl md:text-3xl font-semibold text-cyan-400 mb-6">
-                    Cybersecurity Specialist
+                    Transitioning US Army Veteran | Cybersecurity Specialist
                 </div>
-                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                    Mission-focused cybersecurity professional transitioning from US Army with proven expertise in safeguarding high-value assets and identifying threats in dynamic environments.
-                </p>
                 
                 <!-- Contact Info with Icons -->
-                <div class="flex flex-wrap justify-center items-center gap-6 text-gray-300">
+                <div class="flex flex-wrap justify-center items-center gap-6 text-gray-300 text-sm md:text-base">
                     <a href="tel:+19176743513" class="flex items-center gap-2 hover:text-cyan-400 transition-colors">
-                        <span class="text-2xl">📞</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                         <span>(917) 674-3513</span>
                     </a>
                     <a href="mailto:artem.kozlov99@icloud.com" class="flex items-center gap-2 hover:text-cyan-400 transition-colors">
-                        <span class="text-2xl">✉️</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-1 10a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h12a2 2 0 012 2v12z"></path></svg>
                         <span>artem.kozlov99@icloud.com</span>
                     </a>
                     <a href="https://linkedin.com/in/artem-kozlov-v" target="_blank" class="flex items-center gap-2 hover:text-cyan-400 transition-colors">
-                        <img src="./badges/linkedin-logo.jpg" alt="LinkedIn" class="w-6 h-6" onerror="this.src='./badges/linkedin-logo.png'">
-                        <span>LinkedIn Profile</span>
+                        <img src="./badges/linkedin-logo.jpg" alt="LinkedIn" class="h-4 w-4" onerror="this.src='./badges/linkedin-logo.png'">
+                        <span>linkedin.com/in/artem-kozlov-v</span>
                     </a>
                     <div class="flex items-center gap-2">
-                        <span class="text-2xl">📍</span>
-                        <span>Copperas Cove, TX</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span>📍 Open to Relocation – Based in Copperas Cove, TX</span>
                     </div>
                 </div>
             </div>
         </header>
 
+        <!-- Summary Section -->
+        <section class="glass-section p-8 mb-8 animate-fadeInUp">
+            <h2 class="text-3xl font-bold mb-6 gradient-text section-title">Summary</h2>
+            <p class="text-lg leading-relaxed text-gray-300">
+                Mission-focused cybersecurity professional with a proven track record in safeguarding high-value assets, streamlining logistics, and identifying threats in dynamic environments. Enhancing technical expertise through NPower's Cybersecurity Program. Well-versed in SIEM analysis, system hardening, and vulnerability management.
+            </p>
+        </section>
+
         <!-- Certifications Section -->
         <section class="glass-section p-8 mb-8 animate-fadeInUp">
-            <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Professional Certifications</h2>
+            <h2 class="text-3xl font-bold mb-8 gradient-text section-title">Certifications</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="skill-card hover-lift text-center group">
                     <div class="animate-glow rounded-full w-24 h-24 mx-auto mb-4 flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600">
                         <img src="./badges/comptia-security.jpg" alt="CompTIA Security+" class="w-16 h-16 object-contain" onerror="this.src='./badges/comptia-security.png'">
                     </div>
                     <h3 class="text-xl font-semibold text-cyan-400 mb-2">CompTIA Security+</h3>
-                    <p class="text-gray-300">Industry-standard cybersecurity certification</p>
                 </div>
                 
                 <div class="skill-card hover-lift text-center group">
@@ -368,7 +385,6 @@
                         <img src="./badges/comptia-linux.jpg" alt="CompTIA Linux+" class="w-16 h-16 object-contain" onerror="this.src='./badges/comptia-linux.png'">
                     </div>
                     <h3 class="text-xl font-semibold text-cyan-400 mb-2">CompTIA Linux+</h3>
-                    <p class="text-gray-300">Advanced Linux system administration</p>
                 </div>
                 
                 <div class="skill-card hover-lift text-center group">
@@ -376,86 +392,55 @@
                         <img src="./badges/splunk-certified.jpg" alt="Splunk Core Certified" class="w-16 h-16 object-contain" onerror="this.src='./badges/splunk-certified.png'">
                     </div>
                     <h3 class="text-xl font-semibold text-cyan-400 mb-2">Splunk Core Certified</h3>
-                    <p class="text-gray-300">SIEM analysis and log management</p>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section with Progress Bars -->
+        <!-- Competencies Section -->
         <section class="glass-section p-8 mb-8 animate-fadeInUp">
-            <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Technical Expertise</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold text-cyan-400 mb-4">Cybersecurity</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>SIEM Analysis</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>Vulnerability Assessment</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>Network Security</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="88"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-semibold text-cyan-400 mb-4">System Administration</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>Linux/Windows Servers</span>
-                                <span>92%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="92"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>Python/PowerShell</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>Cloud Technologies</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2 class="text-3xl font-bold mb-6 gradient-text section-title">Competencies</h2>
+            <ul class="grid-list text-gray-300 list-disc list-inside">
+                <li>Cybersecurity</li>
+                <li>System Analysis</li>
+                <li>Infrastructure Management</li>
+                <li>Vulnerability Analysis</li>
+                <li>Threat Detection</li>
+                <li>Malware Detection</li>
+                <li>Network Security</li>
+                <li>System Administration</li>
+                <li>Information System (IS) Management</li>
+                <li>Network Protocol Management</li>
+                <li>System Installation</li>
+                <li>Migrations, Integrations, & Implementations</li>
+                <li>System Testing</li>
+                <li>Technical Project Management</li>
+                <li>Risk Management</li>
+                <li>Compliance</li>
+            </ul>
+        </section>
+
+        <!-- Technical Knowledge Section -->
+        <section class="glass-section p-8 mb-8 animate-fadeInUp">
+            <h2 class="text-3xl font-bold mb-6 gradient-text section-title">Technical Knowledge</h2>
+            <ul class="grid-list text-gray-300 list-disc list-inside">
+                <li>Cybersecurity Tools</li>
+                <li>Linux & Windows Servers</li>
+                <li>VMware</li>
+                <li>Python</li>
+                <li>PowerShell</li>
+                <li>SQL</li>
+                <li>Cloud Technologies</li>
+                <li>Information Systems</li>
+                <li>Classified / Unclassified Systems</li>
+                <li>NIPR/SIPR</li>
+                <li>Web-Based Applications</li>
+                <li>Microsoft Office (Excel, PowerPoint, Outlook, Word)</li>
+            </ul>
         </section>
 
         <!-- Experience Timeline -->
         <section class="glass-section p-8 mb-8 animate-fadeInUp">
-            <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Professional Experience</h2>
+            <h2 class="text-3xl font-bold mb-8 gradient-text section-title">Experience</h2>
             
             <div class="timeline-item hover-lift">
                 <div class="flex items-start gap-4 mb-4">
@@ -467,10 +452,9 @@
                         <p class="text-blue-400 font-semibold">NPower | Remote | May 2025 – July 2025</p>
                     </div>
                 </div>
-                <ul class="space-y-2 text-gray-300 ml-4">
-                    <li>🎯 Selected for highly competitive cybersecurity training program</li>
-                    <li>🔍 Gained hands-on experience in threat detection and vulnerability analysis</li>
-                    <li>🛡️ Built expertise in enterprise infrastructure protection</li>
+                <ul class="space-y-2 text-gray-300 ml-4 list-disc list-inside">
+                    <li>Selected to highly competitive and comprehensive cybersecurity training program; gained knowledge, hands-on experience, and practical skills in cyber framework, systems analysis, and information security protocols.</li>
+                    <li>Built foundational knowledge and strong understanding in cybersecurity principles, threat detection, vulnerability analysis, and network administration from internship expanding ability to provide safeguards and protection for high-value enterprise infrastructure.</li>
                 </ul>
             </div>
 
@@ -484,11 +468,12 @@
                         <p class="text-blue-400 font-semibold">US Army | Fort Cavazos, TX | May 2022 – September 2025</p>
                     </div>
                 </div>
-                <ul class="space-y-2 text-gray-300 ml-4">
-                    <li>📈 Improved inventory tracking accuracy from 92% to 100% for $33M+ equipment</li>
-                    <li>👥 Led team of 6 logistics personnel, increasing asset readiness by 25%</li>
-                    <li>🔒 Maintained NIST and ISO 27001 compliance standards</li>
-                    <li>⚙️ Reduced equipment downtime by 15% through preventive maintenance</li>
+                <ul class="space-y-2 text-gray-300 ml-4 list-disc list-inside">
+                    <li>Overhauled asset accountability processes by leveraging GCSS-Army ERP, improving inventory tracking accuracy from 92% to 100% for $33M+ worth of mission-critical equipment.</li>
+                    <li>Led and trained a team of 6 logistics personnel, streamlining daily supply operations and increasing asset readiness rate by 25%.</li>
+                    <li>Maintained strict compliance with NIST and ISO 27001 standards, ensuring secure handling of sensitive assets during audits and field operations.</li>
+                    <li>Implemented preventive maintenance scheduling for high-value gear, reducing downtime and extending equipment lifecycle by 15%.</li>
+                    <li>Coordinated cross-functional logistics support for over 10 field exercises, ensuring zero mission delays and 100% on-time delivery of supplies.</li>
                 </ul>
             </div>
 
@@ -502,12 +487,31 @@
                         <p class="text-blue-400 font-semibold">Live! Casino | MD | Dec 2019 – Aug 2021</p>
                     </div>
                 </div>
-                <ul class="space-y-2 text-gray-300 ml-4">
-                    <li>💰 Secured $500k+ transactions per shift with AML/KYC protocol enforcement</li>
-                    <li>🔍 Contributed to 40% decrease in suspicious activity incidents</li>
-                    <li>🎓 Trained 3 new hires on compliance procedures</li>
+                <ul class="space-y-2 text-gray-300 ml-4 list-disc list-inside">
+                    <li>Secured high-volume cash and chip transactions totaling $500k+ per shift while enforcing AML and KYC protocols in accordance with state and federal gaming regulations.</li>
+                    <li>Conducted fraud detection and incident reporting, contributing to a 40% decrease in suspicious activity incidents over 12 months.</li>
+                    <li>Trained 3 new hires on compliance procedures.</li>
+                    <li>Delivered exceptional customer service in a high-pressure environment, enhancing VIP guest retention and satisfaction ratings.</li>
                 </ul>
             </div>
+        </section>
+
+        <!-- Personal Skills Section -->
+        <section class="glass-section p-8 mb-8 animate-fadeInUp">
+            <h2 class="text-3xl font-bold mb-6 gradient-text section-title">Personal Skills</h2>
+            <ul class="grid-list text-gray-300 list-disc list-inside">
+                <li>Fluent in English and Russian</li>
+                <li>Self-Starter</li>
+                <li>Team Leader</li>
+                <li>Innovative Problem Solver</li>
+                <li>Cross-Functional Collaboration</li>
+                <li>Relationship Building</li>
+                <li>Analytical</li>
+                <li>Detail-Oriented</li>
+                <li>Organized</li>
+                <li>Goal-Driven</li>
+                <li>Strong Verbal, Written, & Interpersonal Communication Skills</li>
+            </ul>
         </section>
 
         <!-- Contact CTA -->
@@ -624,27 +628,6 @@
             animate();
         }
 
-        // Skill Progress Animation
-        function animateSkillBars() {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const progressBars = entry.target.querySelectorAll('.skill-progress');
-                        progressBars.forEach(bar => {
-                            const width = bar.getAttribute('data-width');
-                            setTimeout(() => {
-                                bar.style.width = width + '%';
-                            }, 500);
-                        });
-                    }
-                });
-            });
-
-            document.querySelectorAll('.glass-section').forEach(section => {
-                observer.observe(section);
-            });
-        }
-
         // Theme Toggle
         function initThemeToggle() {
             const toggleBtn = document.getElementById('theme-toggle');
@@ -671,7 +654,6 @@
         // Initialize everything
         window.addEventListener('load', () => {
             initParticles();
-            animateSkillBars();
             initThemeToggle();
             initDownloadButton();
 
