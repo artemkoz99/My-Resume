@@ -292,20 +292,32 @@
             --bg-primary: #f8fafc;
             --bg-secondary: #e2e8f0;
             --text-primary: #1e293b;
-            --text-secondary: #475569;
+            --text-secondary: #334155;
             --glass-bg: rgba(255, 255, 255, 0.7);
             --glass-border: rgba(0, 0, 0, 0.1);
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            color: #1e293b;
         }
 
         .light-theme .glass-section {
             background: rgba(255, 255, 255, 0.8);
             border: 1px solid rgba(0, 0, 0, 0.1);
+            color: #1e293b;
         }
 
         .light-theme .skill-card {
             background: rgba(0, 0, 0, 0.05);
             border: 1px solid rgba(0, 0, 0, 0.1);
+            color: #1e293b;
+        }
+
+        .light-theme .text-gray-300 {
+            color: #374151 !important;
+        }
+
+        .light-theme .text-gray-300,
+        .light-theme ul li {
+            color: #374151 !important;
         }
 
         /* Grid Lists */
@@ -373,26 +385,26 @@
         <section class="glass-section p-8 mb-8 animate-fadeInUp">
             <h2 class="text-3xl font-bold mb-8 gradient-text section-title">Certifications</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="skill-card hover-lift text-center group">
+                <a href="https://www.credly.com/badges/7c4e88c1-d24a-4d26-ae8d-140149ee45dc/linked_in_profile" target="_blank" class="skill-card hover-lift text-center group">
                     <div class="animate-glow rounded-full w-24 h-24 mx-auto mb-4 flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600">
                         <img src="./badges/comptia-security.jpg" alt="CompTIA Security+" class="w-16 h-16 object-contain" onerror="this.src='./badges/comptia-security.png'">
                     </div>
                     <h3 class="text-xl font-semibold text-cyan-400 mb-2">CompTIA Security+</h3>
-                </div>
+                </a>
                 
-                <div class="skill-card hover-lift text-center group">
+                <a href="https://www.credly.com/badges/37e5af56-34c4-452b-8ac3-635c6bb6e3cb/linked_in_profile" target="_blank" class="skill-card hover-lift text-center group">
                     <div class="animate-glow rounded-full w-24 h-24 mx-auto mb-4 flex items-center justify-center bg-gradient-to-br from-green-500 to-teal-600">
                         <img src="./badges/comptia-linux.jpg" alt="CompTIA Linux+" class="w-16 h-16 object-contain" onerror="this.src='./badges/comptia-linux.png'">
                     </div>
                     <h3 class="text-xl font-semibold text-cyan-400 mb-2">CompTIA Linux+</h3>
-                </div>
+                </a>
                 
-                <div class="skill-card hover-lift text-center group">
-                    <div class="animate-glow rounded-full w-24 h-24 mx-auto mb-4 flex items-center justify-center bg-gradient-to-br from-orange-500 to-red-600">
+                <a href="https://www.credly.com/badges/1aac5020-aaf8-4f2c-a69c-1a15edd0e9eb/linked_in_profile" target="_blank" class="skill-card hover-lift text-center group">
+                    <div class="animate-glow rounded-full w-24 h-24 mx-auto mb-4 flex items-center justify-center bg-gradient-to-br from-orange-500 to-yellow-600">
                         <img src="./badges/splunk-certified.jpg" alt="Splunk Core Certified" class="w-16 h-16 object-contain" onerror="this.src='./badges/splunk-certified.png'">
                     </div>
                     <h3 class="text-xl font-semibold text-cyan-400 mb-2">Splunk Core Certified</h3>
-                </div>
+                </a>
             </div>
         </section>
 
@@ -479,7 +491,7 @@
 
             <div class="timeline-item hover-lift">
                 <div class="flex items-start gap-4 mb-4">
-                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center animate-glow">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center animate-glow">
                         <img src="./badges/live-casino-logo.jpg" alt="Live! Casino" class="w-14 h-7 object-contain" onerror="this.src='./badges/live-casino-logo.png'">
                     </div>
                     <div>
@@ -514,14 +526,7 @@
             </ul>
         </section>
 
-        <!-- Contact CTA -->
-        <section class="glass-card p-8 text-center animate-fadeInUp">
-            <h2 class="text-3xl font-bold mb-4 gradient-text">Ready to Secure Your Organization?</h2>
-            <p class="text-xl text-gray-300 mb-6">Let's discuss how my cybersecurity expertise can protect your valuable assets.</p>
-            <a href="mailto:artem.kozlov99@icloud.com" class="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-8 rounded-full text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                Get In Touch
-            </a>
-        </section>
+
     </div>
 
     <script>
